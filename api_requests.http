@@ -1,0 +1,34 @@
+###Obtener todos los productos
+GET http://localhost:3000/productos
+
+###Obtener un producto por ID
+GET http://localhost:3000/productos/PROD001
+
+###Obtener productos disponibles
+GET http://localhost:3000/productos/disponibles
+
+###Crear un nuevo producto
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "id": "PROD013",
+  "nombre": "Producto de prueba",
+  "precio": 100.00,
+  "descripcion": "Descripción del producto de prueba",
+  "disponible": true,
+  "fecha_ingreso": "2025-04-11"
+}
+
+###Actualizar un producto existente
+PUT http://localhost:3000/productos/PROD013
+Content-Type: application/json
+
+{
+  "nombre": "Producto de prueba actualizado",
+  "precio": 120.00,
+  "descripcion": "Descripción actualizada del producto de prueba",
+}
+
+###Eliminar un producto
+DELETE http://localhost:3000/productos/PROD013

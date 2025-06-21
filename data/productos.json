@@ -1,0 +1,106 @@
+[
+  {
+    "id": "PROD001",
+    "nombre": "Laptop Dell XPS 13",
+    "precio": 1499.99,
+    "descripcion": "Laptop ultradelgada con pantalla de 13.3 pulgadas, procesador Intel Core i7, 16GB RAM y 512GB SSD.",
+    "disponible": true,
+    "fecha_ingreso": "2025-01-15"
+  },
+  {
+    "id": "PROD002",
+    "nombre": "Smartphone Samsung Galaxy S23",
+    "precio": 899.99,
+    "descripcion": "Smartphone con pantalla AMOLED de 6.1 pulgadas, procesador Exynos 2200, 8GB RAM y 128GB almacenamiento.",
+    "disponible": true,
+    "fecha_ingreso": "2025-02-01"
+  },
+  {
+    "id": "PROD003",
+    "nombre": "Auriculares Sony WH-1000XM5",
+    "precio": 349.99,
+    "descripcion": "Auriculares inalámbricos con cancelación de ruido, batería de larga duración y sonido de alta calidad.",
+    "disponible": true,
+    "fecha_ingreso": "2025-03-10"
+  },
+  {
+    "id": "PROD004",
+    "nombre": "Monitor LG UltraFine 4K",
+    "precio": 599.99,
+    "descripcion": "Monitor de 27 pulgadas con resolución 4K, ideal para profesionales creativos.",
+    "disponible": false,
+    "fecha_ingreso": "2025-01-05"
+  },
+  {
+    "id": "PROD005",
+    "nombre": "Teclado mecánico Razer BlackWidow V3",
+    "precio": 129.99,
+    "descripcion": "Teclado mecánico RGB con retroiluminación personalizable y teclas mecánicas duraderas.",
+    "disponible": true,
+    "fecha_ingreso": "2025-04-20"
+  },
+  {
+    "id": "PROD006",
+    "nombre": "Ratón Logitech MX Master 3",
+    "precio": 99.99,
+    "descripcion": "Ratón ergonómico con múltiples botones programables y rueda de desplazamiento magnética.",
+    "disponible": true,
+    "fecha_ingreso": "2025-05-15"
+  },
+  {
+    "id": "PROD007",
+    "nombre": "Cámara Canon EOS R6",
+    "precio": 2499.99,
+    "descripcion": "Cámara sin espejo de fotograma completo con sensor de 20MP, grabación 4K y enfoque automático avanzado.",
+    "disponible": false,
+    "fecha_ingreso": "2025-02-20"
+  },
+  {
+    "id": "PROD008",
+    "nombre": "Tablet Apple iPad Pro 12.9\"",
+    "precio": 1099.99,
+    "descripcion": "Tablet de alto rendimiento con pantalla Liquid Retina XDR, procesador M1 y soporte para Apple Pencil.",
+    "disponible": true,
+    "fecha_ingreso": "2025-03-25"
+  },
+  {
+    "id": "PROD009",
+    "nombre": "Disco duro externo Seagate 2TB",
+    "precio": 89.99,
+    "descripcion": "Disco duro externo portátil de 2TB con conexión USB 3.0, ideal para almacenamiento adicional.",
+    "disponible": true,
+    "fecha_ingreso": "2025-04-05"
+  },
+  {
+    "id": "PROD010",
+    "nombre": "Smartwatch Apple Watch Series 8",
+    "precio": 399.99,
+    "descripcion": "Smartwatch con monitorización de salud, GPS y notificaciones inteligentes.",
+    "disponible": true,
+    "fecha_ingreso": "2025-05-01"
+  },
+  {
+    "id": "PROD011",
+    "nombre": "Altavoz inteligente Amazon Echo Dot",
+    "precio": 49.99,
+    "descripcion": "Altavoz inteligente con Alexa, control por voz y sonido de alta calidad.",
+    "disponible": true,
+    "fecha_ingreso": "2025-04-15"
+  },
+  {
+    "id": "PROD012",
+    "nombre": "Proyector Epson Home Cinema 2150",
+    "precio": 799.99,
+    "descripcion": "Proyector Full HD con tecnología 3LCD, ideal para cine en casa.",
+    "disponible": false,
+    "fecha_ingreso": "2025-01-30"
+  },
+  {
+    "id": "PROD013",
+    "nombre": "Producto de prueba actualizado",
+    "precio": 120.99,
+    "descripcion": "Descripción actualizada del producto de prueba",
+    "disponible": true,
+    "fecha_ingreso": "2025-04-11"
+  }
+]
