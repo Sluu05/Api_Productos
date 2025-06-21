@@ -35,15 +35,33 @@ export  const getById  = (req, res) => {
 export const createProduct = (req, res) => {
     const {id, nombre, precio, descripcion, disponible, fecha_ingreso} = req.body
 
-    if (!id || !nombre || typeof precio !== 'number' || precio <= 0 || !descripcion || descripcion.length < 10 ) {
-        return res.status(400).json({ 
-            message: 'Datos inválidos: id, nombre, precio (mayor a 0), descripcion (minimo 10 caracteres) y disponible son requeridos.' 
-        });
+    const errors = [];
+    if (!id || typeof id !== 'string') {
+        errors.push('El ID es requerido y debe ser una cadena de texto');
+    }
+
+    if (!nombre || typeof nombre !== 'string') {
+        errors.push('El nombre es requerido y debe ser una cadena de texto');
+    }
+
+    if (precio === undefined || typeof precio !== 'number' || precio <= 0) {
+        errors.push('El precio es requerido y debe ser un número mayor a 0');
+    }
+
+    if (!descripcion || typeof descripcion !== 'string' || descripcion.length < 10) {
+        errors.push('La descripción es requerida y debe tener al menos 10 caracteres');     
     }
 
     if (productos.find(prod => prod.id === id)) {
         return res.status(400).json({ 
             message: 'El ID ya existe' 
+        });
+    }
+
+    if (errors.length > 0) {
+        return res.status(400).json({ 
+            success: false,
+            message: 'Datos inválidos: ' + errors.join(', ') 
         });
     }
 
@@ -60,12 +78,19 @@ export const createProduct = (req, res) => {
     }
     
     productos.push(newProduct);
-    saveProducts();
-
-    res.status(201).json({
-        success: true,
-        message: 'Producto creado correctamente',
-    });
+    try { 
+        saveProducts();
+        res.status(201).json({
+            success: true,
+            message: 'Producto creado correctamente',
+        });
+    } catch (error) {
+        res.status(500).json({ 
+            success: false,
+            message: 'Error al crear el producto',
+            error: error.message
+        });
+    }
 }
 
 export const updateProduct = (req, res) => {

@@ -79,7 +79,6 @@ npm run dev
 - El `precio` debe ser mayor a 0.
 - La `descripcion` debe tener al menos 10 caracteres.
 - El campo `disponible` debe ser booleano (`true` o `false`).
-- `fecha_ingreso` se asigna automáticamente al momento de creación.
 
 ---
 

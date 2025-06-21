@@ -94,13 +94,5 @@
     "descripcion": "Proyector Full HD con tecnología 3LCD, ideal para cine en casa.",
     "disponible": false,
     "fecha_ingreso": "2025-01-30"
-  },
-  {
-    "id": "PROD013",
-    "nombre": "Producto de prueba actualizado",
-    "precio": 120.99,
-    "descripcion": "Descripción actualizada del producto de prueba",
-    "disponible": true,
-    "fecha_ingreso": "2025-04-11"
   }
 ]

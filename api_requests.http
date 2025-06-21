@@ -2,7 +2,7 @@
 GET http://localhost:3000/productos
 
 ###Obtener un producto por ID
-GET http://localhost:3000/productos/PROD001
+GET http://localhost:3000/productos/PROD013
 
 ###Obtener productos disponibles
 GET http://localhost:3000/productos/disponibles
@@ -14,7 +14,7 @@ Content-Type: application/json
 {
   "id": "PROD013",
   "nombre": "Producto de prueba",
-  "precio": 100.00,
+  "precio": 100.50,
   "descripcion": "Descripción del producto de prueba",
   "disponible": true,
   "fecha_ingreso": "2025-04-11"
@@ -26,8 +26,8 @@ Content-Type: application/json
 
 {
   "nombre": "Producto de prueba actualizado",
-  "precio": 120.00,
-  "descripcion": "Descripción actualizada del producto de prueba",
+  "precio": 120.99,
+  "descripcion": "Descripción actualizada del producto de prueba"
 }
 
 ###Eliminar un producto
